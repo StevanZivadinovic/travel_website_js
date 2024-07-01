@@ -1,0 +1,132 @@
+
+.o_kompaniji_main{
+    background-image: url("./../img/carusel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+.headerONama{
+    background-image: none;
+    height: 80px;
+
+}
+.nav_o_kompaniji{
+    background-color: rgba(187, 187, 187, 0.5); 
+   height: 100%;
+    
+    
+}
+.nav_o_kompaniji li a{
+   color: var(--orange);
+}
+
+.links_o_kompaniji a:hover{
+    background-color: var(--darkGreen);
+ }
+
+ .o_nama_main{
+    background-color: rgba(62, 79, 28, 0.3);
+    padding-bottom: 5rem;
+ }
+
+ .podnaslov{
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--cream);
+ }
+ .main_text_o_nama_text{
+    text-shadow: var(--orange) 1px 0 10px;
+    color: var(--greenLight);
+ }
+ .lista_delatnosti{
+    list-style-type:none;
+    text-shadow: var(--orange) 1px 0 10px;
+    color: var(--greenLight);
+ }
+ .lista_delatnosti li:before {   content: '✓ '; }
+
+ .drugi_o_nama_text{
+    font-style: italic;
+    text-shadow: var(--orange) 1px 0 10px;
+    color: var(--greenLight);
+ }
+
+ .drugi_o_nama_text p:nth-child(1){
+    text-decoration: underline;
+    font-size: 1.2rem;
+ }
+ .drugi_o_nama_text p:nth-child(2){
+    font-style: normal;
+ }
+
+.o_nama_main_direktor{
+    background-color: rgba(24, 26, 21,.4);
+}
+ .direktor_div{
+    width: 200px;
+    height: auto;
+ }
+
+ .direktor_div img{
+    width: 200px;
+    height: auto;
+ }
+ .direktor_message{
+    color: var(--cream);
+    width: 80%;
+ }
+
+ .direktor_message p{
+    text-align:justify;
+    white-space: normal;
+    letter-spacing: 0.1em; /* Initial letter spacing */
+
+ }
+ 
+
+ @media (max-width: 1025px) {
+  
+   .mainOKompaniji{
+      flex-direction: column;
+
+   }
+   .mainOKompaniji nav{
+     
+      width: 100% !important;
+   }
+   .mainOKompaniji .o_nama_main{
+     
+      width: 100% !important;
+   }
+   .mainOKompaniji .o_nama_main_direktor{
+     
+      width: 100% !important;
+   }
+   .nav_o_kompaniji li a{
+      text-align: center;
+   }
+   .barsBtn{
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+    .barsBtn:focus{
+     outline: none;
+    }
+}
+
+@media (max-width: 480px) {
+   .footer-bootom{
+      text-align: center;
+   }
+   .barsBtn{
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+    .barsBtn:focus{
+     outline: none;
+    }
+}

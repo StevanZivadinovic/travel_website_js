@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Putovanja-i-avanture</title>
+    <link href="./style/home.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar Section_ -->
+    <header class="header min-vh-100">
+      <nav class="">
+        <div class="d-flex justify-content-between container-fluid navbar__container">
+
+          <div class="d-flex justify-content-between responsiveMiniHeader">
+            <h1 id="navbar__logo">
+              Putovanja i avanture<span class="dot position-relative"></span>
+            </h1>
+            <button onclick="displayNav()" class="barsBtn bg-transparent border-0"><i class="fas fa-bars"></i></button>
+          </div>
+          
+          <ul class="navbar__menu">
+            <li class="navbar__item d-flex">
+              <a href="/" class="navbar__links">Pocetna</a>
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./pages/o_kompaniji.html" class="navbar__links"
+                >O kompaniji</a
+              >
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./pages/nas_tim.html" class="navbar__links">Nas tim</a>
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./pages/delatnost.html" class="navbar__links"
+                >Delatnost</a
+              >
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./pages/kontakt.html" class="navbar__links">Kontakt</a>
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./pages/demo.html" class="navbar__links">Demo</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="slideshow-container">
+        <div class="arrows">
+          <a class="prev" onclick="plusSlides(-1)"
+            ><i class="fas fa-chevron-left"></i
+          ></a>
+          <a class="next" onclick="plusSlides(1)"
+            ><i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="mySlides ">
+          <h2 class="numbertext">
+            Sport <span class="span">rekreacija i zabava</span>
+          </h2>
+          <h4 class="text">Neogranicen broj dostupnih sadrzaja</h4>
+          <a href="/pages/delatnost.html"
+          class="d-flex justify-content-center my-5"
+          target="_blank"
+            ><input type="button" value="Learn more" class="button m-auto rounded-pill"
+          /></a>
+        </div>
+
+        <div class="mySlides ">
+          <h2 class="numbertext">
+            Ribolov <span class="span">gde i kako naci turu za ribolov</span>
+          </h2>
+          <h4 class="text">Reke i jezera u Srbiji i regionu</h4>
+          <a href="/pages/delatnost.html"
+          class="d-flex justify-content-center my-5"
+          target="_blank"
+            ><input type="button" value="Learn more" class="button m-auto rounded-pill"
+          /></a>
+        </div>
+
+        <div class="mySlides ">
+          <h2 class="numbertext">
+            Planinarenje <span class="span">nikad lakse naci turu</span>
+          </h2>
+          <h4 class="text">Planinarske rute i akcije</h4>
+          <a href="/pages/delatnost.html"
+          class="d-flex justify-content-center my-5"
+          target="_blank"
+            ><input type="button" value="Learn more" class="button m-auto rounded-pill"
+          /></a>
+        </div>
+
+        <div class="mySlides ">
+          <h2 class="numbertext">
+            Lov i gljivarenje <span class="span">uputstva, ture, akcije</span>
+          </h2>
+          <h4 class="text">Informacije o akcijama i turama</h4>
+          <a href="/pages/delatnost.html"
+          class="d-flex justify-content-center my-5"
+          target="_blank"
+            ><input type="button" value="Learn more" class="button m-auto rounded-pill"
+          /></a>
+        </div>
+
+        <div class="mySlides">
+          <h2 class="numbertext">
+            Smestaj <span class="span">u Srbiji i regionu</span>
+          </h2>
+          <h4 class="text">Restorani, hrana i smestaj na jedom mestu, preporuke </h4>
+          <a href="/pages/delatnost.html"
+          target="_blank"
+          class="d-flex justify-content-center my-5"
+            ><input type="button" value="Learn more" class="button m-auto rounded-pill"
+          /></a>
+        </div>
+      </div>
+
+      <div class="dotDiv">
+        <span class="dot1 mr-1 rounded-circle d-inline-block" onclick="currentSlide(1)"></span>
+        <span class="dot1 mr-1 rounded-circle d-inline-block" onclick="currentSlide(2)"></span>
+        <span class="dot1 mr-1 rounded-circle d-inline-block" onclick="currentSlide(3)"></span>
+        <span class="dot1 mr-1 rounded-circle d-inline-block" onclick="currentSlide(4)"></span>
+        <span class="dot1 mr-1 rounded-circle d-inline-block" onclick="currentSlide(5)"></span>
+      </div>
+    </header>
+    <main>
+    <!-- About As -->
+    <div class="py-5">
+      <div class="container-fluid  justify-content-center flex-row-reverse">
+        <div class="aboutAs text-center m-auto">
+          <h1 class="aboutAs1">O kompaniji</h1>
+          <div class="Line"></div>
+          <h6 class="someText">
+            Nas cilj je da ljudima pruzimo pravovremene informacije o aktivnostima i smestaju u prirodi 
+            u nasoj zemlji i okruzenju
+          </h6>
+        </div>
+  
+        <div id="aboutAs" class="position-relative flex-row-reverse justify-content-around mx-auto py-5 text-center">
+          <div class="aboutAs d-flex">
+            <div class="item">
+              <a href="./pages/kontakt.html" target="_blank">
+                <div class="img"><img class="space w" src="./img/space.svg" /></div>
+              </a>
+              <h3 class="firstText">Brzo do informacija</h3>
+              <p class="description">
+                Saznajte sve sto vas zanima brzo i koncizno
+              </p>
+            </div>
+            <div class="item">
+              <a href="./pages/nas_tim.html" target="_blank">
+                <div class="img"><img class="atom w" src="./img/atom.svg" /></div>
+              </a>
+              <h3 class="firstText">Timski </br> rad</h3>
+              <p class="description">
+                Nas tim je svakodnevno
+                 tu za vas, visoko motivisan da pruzi najbolju uslugu
+              </p>
+            </div>
+            <div class="item">
+              <a href="./pages/kontakt.html" target="_blank">
+                <div class="img"><img class="fan w" src="./img/fan.svg" /></div>
+              </a>
+              <h3 class="firstText">Vetar u ledja</h3>
+              <p class="description">
+                Imacete podrsku na svakom koraku, od pronalazenja ture do povratka kuci
+              </p>
+            </div>
+            <div class="item">
+              <a href="./pages/o_kompaniji.html" target="_blank">
+                <div class="img"><img class="cloud w" src="./img/cloud.svg" /></div>
+              </a>
+              <h3 class="firstText">Sigurnost podataka</h3>
+              <p class="description">
+                Ne brinite, vasi podaci cuvaju se u nasoj bazi, imamo dugogodisnje iskustvo kojim su zadovoljni nasi prethodni korisnici
+              </p>
+            </div>
+          </div>
+          <div id="button">
+            <a href="./pages/o_kompaniji.html"
+            class="d-flex justify-content-center my-5"
+              ><input type="button" value="Learn more" class="button m-auto rounded-pill"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sectionBg">
+      <div class="section d-flex m-auto justify-content-between">
+        <div class="imageContainer"><img class="imageSection" src="./img/photo.jpg" /></div>
+        <div class="image1B">
+          <div class="position">
+            <h1>Nas tim</h1>
+            <p class="">
+              Nas tim je grupa ljudi povezana ljubavlju prema prirodi i turizmu, sacinjena od pojedinaca
+              sa visegodisnjim iskustvom u turizmu, planinarenju i ugostiteljskim uslugama..
+            </p>
+            <div>
+              <a href="./pages/nas_tim.html"
+              target="_blank"
+              class="d-flex justify-content-center my-5"
+                ><input type="button" value="Learn more" class="button rounded-pill"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionBg">
+      <div class="section d-flex m-auto justify-content-between">
+        
+        <div class="image1B">
+          <div class="position">
+            <h1>Tu smo za Vas!</h1>
+            <p class="">
+              Ukoliko imate pitanja slobdno se javite, nas tim strucnjaka je tu za vas!
+            </p>
+            <div>
+              <a href="./pages/kontakt.html"
+              target="_blank"
+              class="d-flex justify-content-center my-5"
+                ><input type="button" value="Learn more" class="button rounded-pill"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="imageContainer justify-content-end"><img class="imageSection" src="./img/laptop.jpg" /></div>
+      </div>
+    </div>
+  </main>
+    <footer class=".container-fluid footer">
+      <div class="d-flex justify-content-between align-items-center py-4 px-2">
+        <p class="d-flex justify-content-between align-items-center mb-0">Dimitrije Kusic 6082</p>
+        <p class="d-flex justify-content-between align-items-center mb-0">&copy; 2024 Putovanja_i_avanture. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

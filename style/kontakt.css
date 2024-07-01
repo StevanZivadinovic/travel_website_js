@@ -1,0 +1,24 @@
+.kontakt_main{
+
+    background-image: url("./../img/carusel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.headerKontakt{
+    background-image: none;
+    height: 80px;
+
+}
+.formMain{
+    color: var(--orange);
+    min-height: 90vh;
+
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 1025px) {
+}

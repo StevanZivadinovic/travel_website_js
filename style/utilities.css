@@ -1,0 +1,17 @@
+/* colors */
+:root{
+    --green: #587027;
+    --gray:#808080;
+    --graylight:rgb(187, 187, 187);
+    --graydark:#717171;
+    --seagreen:#2e8b57;
+    --greenLight:#0fe56c;
+
+    --graylightlight:#d3d3d3;
+    --cream:#f8f4f4;
+    --white:#ffffff;
+    --orange:#f4a108;
+    --orangeLlight:#f0b30b;
+    --darkGreen:rgb(62, 79, 28);
+    --lightBlack:rgb(24, 26, 21);
+}

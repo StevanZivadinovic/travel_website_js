@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+/>
+    <link href="./../style/home.css" rel="stylesheet" />
+    <link href="./../style/demo.css" rel="stylesheet" />
+    <title>Demo</title>
+  </head>
+  <body class="demo_main">
+    <header class="header headerDemo">
+      <nav class="">
+        <div
+          class="d-flex justify-content-between container-fluid navbar__container"
+        >
+          <div class="d-flex justify-content-between responsiveMiniHeader px-3">
+            <h1 id="navbar__logo">
+              Putovanja i avanture<span class="dot position-relative"></span>
+            </h1>
+            <button onclick="displayNav()" class="barsBtn bg-transparent border-0"><i class="fas fa-bars"></i></button>
+          </div>
+
+          <ul class="navbar__menu">
+            <li class="navbar__item d-flex">
+              <a href="/" class="navbar__links">Pocetna</a>
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./../pages/o_kompaniji.html" class="navbar__links"
+                >O kompaniji</a
+              >
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./../pages/nas_tim.html" class="navbar__links"
+                >Nas tim</a
+              >
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./../pages/delatnost.html" class="navbar__links"
+                >Delatnost</a
+              >
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./../pages/kontakt.html" class="navbar__links"
+                >Kontakt</a
+              >
+            </li>
+            <li class="navbar__item d-flex">
+              <a href="./../pages/demo.html" class="navbar__links">Demo</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-5 mainDemo">
+        <h2>Demo - Izračunavanje rastojanja na mapi</h2>
+        <div class="form-group">
+          <label for="latitude1">Latitude tačke A:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="latitude1"
+            placeholder="Unesite širinu geografske dužine"
+          />
+        </div>
+        <div class="form-group">
+          <label for="longitude1">Longitude tačke A:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="longitude1"
+            placeholder="Unesite dužinu geografske širine"
+          />
+        </div>
+        <div class="form-group">
+          <label for="latitude2">Latitude tačke B:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="latitude2"
+            placeholder="Unesite širinu geografske dužine"
+          />
+        </div>
+        <div class="form-group">
+          <label for="longitude2">Longitude tačke B:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="longitude2"
+            placeholder="Unesite dužinu geografske širine"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="calculateDistance()"
+        >
+          Izračunaj rastojanje
+        </button>
+        <hr />
+        <h4>Rezultat:</h4>
+        <p id="distanceResult"></p>
+      </div>
+    </main>
+    <footer class=".container-fluid footer footer-bootom w-100">
+      <div class="d-flex justify-content-between align-items-center py-4 px-2">
+        <p class="d-flex justify-content-between align-items-center mb-0">
+          Dimitrije Kusic 6082
+        </p>
+        <p class="d-flex justify-content-between align-items-center mb-0">
+          &copy; 2024 Putovanja_i_avanture. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./../script/demo.js"></script>
+    <script src="./../script/index.js"></script>
+  </body>
+</html>

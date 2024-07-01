@@ -1,0 +1,40 @@
+.demo_main{
+
+    background-image: url("./../img/carusel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.headerDemo{
+    background-image: none;
+    height: 80px;
+
+}
+.mainDemo{
+    min-height: 90vh;
+    color: var(--orange);
+}
+
+
+@media (max-width: 480px) {
+    .barsBtn{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+      .barsBtn:focus{
+       outline: none;
+      }
+}
+
+@media (max-width: 1025px) {
+    .barsBtn{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+      .barsBtn:focus{
+       outline: none;
+      }
+}

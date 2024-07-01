@@ -1,0 +1,94 @@
+.delatnost_main{
+
+    background-image: url("./../img/carusel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+.headerDelatnost{
+    background-image: none;
+    height: 80px;
+
+}
+.mainMedallions{
+    height: 100%;
+   padding: 3rem 0rem;
+}
+  .medallion {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: var(--cream);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .medallion:hover .medallion-name {
+            display: block;
+        }
+
+        .medallion-name {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--lightBlack);
+            opacity: 0.7;
+            color: var(--white);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .medallion-description{
+            background-color: var(--lightBlack);
+            opacity: 0.7;
+            color: var(--greenLight);
+            width: 200px;
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: var(--seagreen);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+        
+        
+/* animation */
+.medallion:nth-child(odd) {
+    animation: rotateClockwise 10s linear infinite;
+}
+
+.medallion:nth-child(even) {
+    animation: rotateCounterClockwise 12s linear infinite;
+}
+
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 1025px) {
+}

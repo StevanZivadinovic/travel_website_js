@@ -1,0 +1,328 @@
+@import url('./utilities.css');
+@import url('./commonClasses.css');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+
+.slideshow-container {
+  color: var(--white);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* height: auto; */
+}
+.arrows{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.dotDiv {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  color: var(--white);
+}
+
+.next {
+  color: var(--green);
+  font-size: 30px;
+  font-weight: 100;
+ 
+}
+
+.prev {
+  color: var(--green);
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.numbertext {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--graydark);
+}
+
+.mySlides {
+  width: 600px;
+  display: flex;
+}
+
+.span {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+.down {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  width: 100%;
+  margin: auto;
+  color: var(--green);
+  text-decoration: none;
+}
+.aboutAs {
+  position: relative;
+  min-height: 100px;
+  background-color: var(--white);
+  width: 700px;
+}
+
+.aboutAs1 {
+  font-weight: 200;
+  color: var(--gray);
+}
+
+.Line {
+  width: 30px;
+  height: 1px;
+  background-color: var(--green);
+  width: 20px;
+  margin: auto;
+  position: relative;
+  top: 15px;
+}
+
+.someText {
+  position: relative;
+  top: 30px;
+  color: var(--gray);
+}
+
+#aboutAs {
+  min-height: 300px;
+  width: 800px;
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  background-color: var(--graylightlight);
+  margin: auto;
+  position: relative;
+  top: 20px;
+  border-radius: 50%;
+}
+.firstText {
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 10px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  font-weight: 200px;
+  color: var(--gray);
+  display: grid;
+  grid-template-rows: 20px 20px 20px;
+}
+
+.space {
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.atom {
+  width: 50px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.fan {
+  width: 50px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.cloud {
+  width: 50px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.img:hover {
+  background-color: var(--orange);
+}
+.image1 {
+  width: 100%;
+  min-height: 400px;
+  background-color: var(--cream);
+  position: relative;
+  top: -100px;
+}
+.sectionBg{
+  background-color: var(--cream);
+}
+.section{
+  width: 80%;
+}
+
+.imageContainer{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.imageSection {
+  width: 400px;
+  border-radius: 30px;
+}
+.image1B {
+  display: flex;
+}
+
+.position {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.position h1,
+.position2 h1 {
+  font-weight: 300;
+}
+
+.position p,
+.position2 p {
+  color: var(--gray);
+}
+.image1B2 {
+  display: flex;
+}
+.position2 {
+  width: 504px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .aboutAs, #aboutAs, .image1, #second, .position2, .position, #button, .slideshow-container, .mySlides {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #aboutAs{
+    margin-bottom: 200px;
+  }
+  .aboutAs{
+    flex-direction: column;
+  }
+  .image1Ab{
+    margin-top: 100px;
+  }
+
+  #button{
+    display: none;
+    
+  }
+  .section{
+    flex-direction: column;
+  }
+  .section .imageContainer .imageSection{
+    display: none;
+  }
+  
+ }
+
+ @media (max-width: 1025px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .aboutAs, #aboutAs, .image1, #second, .position2, .position, #button, .slideshow-container, .mySlides {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #aboutAs{
+    margin-bottom: 200px;
+  }
+  .aboutAs{
+    flex-direction: column;
+  }
+  .image1Ab{
+    margin-top: 100px;
+  }
+
+  #button{
+    display: none;
+    
+  }
+  .section{
+    flex-direction: column;
+  }
+  .section .imageContainer .imageSection{
+    display: none;
+  }
+  
+ }
